@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-7.3.0_73f4be58f45bfbc7629e15d0841db979b13df024/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-7.3.0_0de5b44f749dbe574ddc15c3f035ea7c53511402/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-7.3.0_c70cc490b401a02f8f77d4ebe825ae98067d8491/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-7.3.0_3d5e290f7c1bbfc4ce050ea6f07e8b1fc4b0a83c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-7.3.0_2ddc1137f680218ab42ee7b9d28b0f83e6100ac8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_ce26815efff10d24e6e917ccc03fceaf8fafccb6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_abf652f9086265e406878395ace722c96c12142f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-7.3.0_bd9d13edd652390ccbdb35d02b14a2e848175a05/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_87947929b862dd3f9358a69a44ebaeb5d0a6be32/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-7.3.0_18ba332d8d007c910a0aea1a64714238494dfcbe/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_a13f61e6756f754343f0dc15e1b49b002cdaaa2d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-7.3.0_493b4fad6ee17ed879f9b4003f3621c9a828f84a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-7.3.0_153a28393bb791918270b2f4d5dc96256ed3bb5c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-7.3.0_b4e32d7ccf8561eb62702c0a338dff915eb40ee5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b5bbba48861f6eb0ed33742e21330f7e080d4810">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6b1cce3bc6a7eaa32cca64baded23b1ba3c329e3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_696d69673954d46e2fad7b7c5c86b23dfa404083/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-7.3.0_83e41a084924390caaef3db510cc9b7191087e94/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-7.3.0_7665278e0a01bafdbe26ab18fffbc4898bc7b41e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-7.3.0_7ae0551d97caea3d7dc6895f60702580665a52ee/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-7.3.0_f822b8f1625368a15b48ecf3821f1affa84a6b3a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appstate-7.3.0_b9373fcabb59fedd10b5fdf92af0140a3d2be55e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_0744c549e31fafb1e8f226420d2ee3aa7a59aa4d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c3d65dce2f02ea4e57babd28442ccf24f6f690f2">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d52b5a23505aa45a6cb21deb7e4297281cf15fe7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-7.3.0_8f1dc8aee4f125dfdbe1b1e4f877eb9ba7d7b9ce/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-7.3.0_a1f70e61a8ca01ab454a2de0b32054e3e46a740b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-7.3.0_4693fd788dfdc80dfad220f808266d679a6412af/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/sasikumarlakshmanan/AndroidStudio/FinalProject/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-7.3.0_75d6632110c0a209500e75ec1a771ee530cff800/classes.dex" />
+    </item>
+
+</items>
