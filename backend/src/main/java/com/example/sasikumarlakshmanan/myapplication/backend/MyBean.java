@@ -4,6 +4,7 @@ package com.example.sasikumarlakshmanan.myapplication.backend;
 public class MyBean {
 
     private String myData;
+    private String myJoke;
 
     public String getData() {
         return myData;
@@ -12,4 +13,13 @@ public class MyBean {
     public void setData(String data) {
         myData = data;
     }
+
+    public String getJoke() {
+        return myData;
+    }
+
+    public void setJoke(String data) {
+        myData = data;
+    }
+
 }
