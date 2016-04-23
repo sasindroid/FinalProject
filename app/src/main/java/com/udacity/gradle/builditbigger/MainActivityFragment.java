@@ -50,6 +50,8 @@ public class MainActivityFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(getActivity(), "Manfred"));
+//        new EndpointsAsyncTask().execute(new Pair<Context, String>(getActivity(), "Manfred"));
+
+//        new EndpointsQuote2AsyncTask().execute();
     }
 }
