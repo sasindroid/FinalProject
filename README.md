@@ -1,6 +1,6 @@
 # Gradle for Android and Java Final Project
 
-In this project, you will create an app with multiple flavors that uses
+In this project for Udacity "Built It Bigger", I have created an app with multiple flavors that uses
 multiple libraries and Google Could Endpoints. The finished app will consist
 of four modules. A Java library that provides jokes, a Google Could Endpoints
 (GCE) project that serves those jokes, an Android Library containing an
