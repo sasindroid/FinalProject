@@ -1,6 +1,7 @@
 package com.udacity.gradle.builditbigger;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
@@ -18,9 +19,16 @@ public class EndpointsDeleteJokesAsyncTask extends AsyncTask<Void, Void, Void> {
     private static final String TAG = "EndpointsDeleteJokesAsyncTask";
     private static JokeApi myJokeService = null;
     private Activity activity;
+    ProgressDialog dialog;
 
     EndpointsDeleteJokesAsyncTask(Activity activity) {
         this.activity = activity;
+    }
+
+    @Override
+    protected void onPreExecute() {
+
+        showProgress(activity.getResources().getString(R.string.progress_delete_jokes));
     }
 
     /**
@@ -62,6 +70,21 @@ public class EndpointsDeleteJokesAsyncTask extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void params) {
 
+        stopProgress();
+
         Toast.makeText(activity, R.string.jokes_deleted, Toast.LENGTH_SHORT).show();
+    }
+
+    public void showProgress(String str) {
+        dialog = new ProgressDialog(activity);
+        dialog.setMessage(str);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.show();
+    }
+
+    public void stopProgress() {
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
     }
 }

@@ -1,6 +1,7 @@
 package com.udacity.gradle.builditbigger;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ public class EndpointsInsertJokeAsyncTask extends AsyncTask<Void, Void, Integer>
     private static JokeApi myJokeService = null;
     private Activity activity;
     String[] jokes;
+    ProgressDialog dialog;
 
     EndpointsInsertJokeAsyncTask(Activity activity, String[] jokes) {
         this.activity = activity;
@@ -28,6 +30,8 @@ public class EndpointsInsertJokeAsyncTask extends AsyncTask<Void, Void, Integer>
 
     @Override
     protected void onPreExecute() {
+
+        showProgress(activity.getResources().getString(R.string.progress_add_jokes));
 
         if (jokes == null || jokes.length == 0) {
             cancel(true);
@@ -86,6 +90,8 @@ public class EndpointsInsertJokeAsyncTask extends AsyncTask<Void, Void, Integer>
     @Override
     protected void onPostExecute(Integer jokesCnt) {
 
+        stopProgress();
+
         if (jokesCnt > 0) {
             Toast.makeText(activity, R.string.jokes_added, Toast.LENGTH_SHORT).show();
         }
@@ -95,9 +101,24 @@ public class EndpointsInsertJokeAsyncTask extends AsyncTask<Void, Void, Integer>
     @Override
     protected void onCancelled() {
 
+        stopProgress();
+
         Toast.makeText(activity, R.string.no_jokes_passed, Toast.LENGTH_SHORT).show();
 
         super.onCancelled();
 
+    }
+
+    public void showProgress(String str) {
+        dialog = new ProgressDialog(activity);
+        dialog.setMessage(str);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.show();
+    }
+
+    public void stopProgress() {
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
     }
 }

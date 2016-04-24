@@ -13,5 +13,8 @@
     <string name="jokes_added">Jokes added!</string>
     <string name="no_jokes_passed">No Jokes passed.</string>
     <string name="jokes_deleted">Jokes deleted!</string>
+    <string name="progress_get_jokes">Getting jokes that you like, please wait....</string>
+    <string name="progress_add_jokes">Adding jokes that you like, please wait....</string>
+    <string name="progress_delete_jokes">Deleting jokes, please wait....</string>
 
 </resources>

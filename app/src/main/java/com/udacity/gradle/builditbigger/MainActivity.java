@@ -1,17 +1,22 @@
 package com.udacity.gradle.builditbigger;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.example.JokeClass;
+import com.sasi.jokeandroidlib.DisplayJokes;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements EndpointsGetJokesAsyncTask.OnJokesTaskCompleteHandler {
 
     public static final String JOKES_ARRAY = "JOKES_ARRAY";
+
+    ProgressDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +46,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJokes(View view){
+    public void tellJokes(View view) {
 
         // Get the jokes from Java Library.
         String[] jokes = new JokeClass().getJokes();
@@ -52,6 +57,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void getJokes(View view) {
 
+        showProgress(getString(R.string.progress_get_jokes));
         new EndpointsGetJokesAsyncTask(this).execute();
     }
 
@@ -60,5 +66,32 @@ public class MainActivity extends ActionBarActivity {
         new EndpointsDeleteJokesAsyncTask(this).execute();
     }
 
+    @Override
+    public void onJokesTaskComplete(String[] jokesStrArr) {
 
+        stopProgress();
+
+        // Pass the Jokes from GCE to the Android Library to display those Jokes.
+        Intent jokeIntent = new Intent(this, DisplayJokes.class);
+
+        Bundle jokesBundle = new Bundle();
+        jokesBundle.putStringArray(MainActivity.JOKES_ARRAY, jokesStrArr);
+
+        jokeIntent.putExtras(jokesBundle);
+
+        this.startActivity(jokeIntent);
+    }
+
+    public void showProgress(String str) {
+        dialog = new ProgressDialog(this);
+        dialog.setMessage(str);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.show();
+    }
+
+    public void stopProgress() {
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
+    }
 }
