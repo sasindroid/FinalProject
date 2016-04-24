@@ -42,7 +42,7 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
 
             // After deploying to cloud backend
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null)
-                    .setRootUrl("https://udacitybuiltitbigger-1289.appspot.com/_ah/api/");
+                    .setRootUrl("https://YOUR_PROJECT_ID.appspot.com/_ah/api/");
             myApiService = builder.build();
 
         }

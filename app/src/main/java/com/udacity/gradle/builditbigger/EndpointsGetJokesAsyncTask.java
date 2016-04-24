@@ -56,7 +56,7 @@ public class EndpointsGetJokesAsyncTask extends AsyncTask<Void, Void, String[]> 
 
             // After deploying to cloud backend
             JokeApi.Builder builder = new JokeApi.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null)
-                    .setRootUrl("https://udacitybuiltitbigger-1289.appspot.com/_ah/api/");
+                    .setRootUrl("https://YOUR_PROJECT_ID.appspot.com/_ah/api/");
 
             myJokeService = builder.build();
         }
