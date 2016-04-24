@@ -11,7 +11,6 @@ import android.view.View;
 import com.example.JokeClass;
 import com.sasi.jokeandroidlib.DisplayJokes;
 
-
 public class MainActivity extends ActionBarActivity implements EndpointsGetJokesAsyncTask.OnJokesTaskCompleteHandler {
 
     public static final String JOKES_ARRAY = "JOKES_ARRAY";

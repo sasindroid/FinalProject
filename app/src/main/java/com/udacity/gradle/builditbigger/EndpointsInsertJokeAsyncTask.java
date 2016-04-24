@@ -23,7 +23,7 @@ public class EndpointsInsertJokeAsyncTask extends AsyncTask<Void, Void, Integer>
     String[] jokes;
     ProgressDialog dialog;
 
-    EndpointsInsertJokeAsyncTask(Activity activity, String[] jokes) {
+    public EndpointsInsertJokeAsyncTask(Activity activity, String[] jokes) {
         this.activity = activity;
         this.jokes = jokes;
     }

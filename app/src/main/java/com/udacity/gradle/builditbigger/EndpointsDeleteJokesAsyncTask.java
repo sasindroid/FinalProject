@@ -21,7 +21,7 @@ public class EndpointsDeleteJokesAsyncTask extends AsyncTask<Void, Void, Void> {
     private Activity activity;
     ProgressDialog dialog;
 
-    EndpointsDeleteJokesAsyncTask(Activity activity) {
+    public EndpointsDeleteJokesAsyncTask(Activity activity) {
         this.activity = activity;
     }
 

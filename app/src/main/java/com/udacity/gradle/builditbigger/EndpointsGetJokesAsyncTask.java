@@ -31,7 +31,7 @@ public class EndpointsGetJokesAsyncTask extends AsyncTask<Void, Void, String[]> 
 //        this.activity = activity;
 //    }
 
-    EndpointsGetJokesAsyncTask(OnJokesTaskCompleteHandler onJokesTaskCompleteHandler) {
+    public EndpointsGetJokesAsyncTask(OnJokesTaskCompleteHandler onJokesTaskCompleteHandler) {
         this.onJokesTaskCompleteHandler = onJokesTaskCompleteHandler;
     }
 
