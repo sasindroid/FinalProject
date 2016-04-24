@@ -9,11 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.JokeClass;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.sasi.jokeandroidlib.DisplayJokes;
-import com.udacity.gradle.builditbigger.EndpointsDeleteJokesAsyncTask;
-import com.udacity.gradle.builditbigger.EndpointsGetJokesAsyncTask;
-import com.udacity.gradle.builditbigger.EndpointsInsertJokeAsyncTask;
-import com.udacity.gradle.builditbigger.R;
 
 
 public class MainActivity extends ActionBarActivity implements EndpointsGetJokesAsyncTask.OnJokesTaskCompleteHandler {
@@ -21,11 +20,36 @@ public class MainActivity extends ActionBarActivity implements EndpointsGetJokes
     public static final String JOKES_ARRAY = "JOKES_ARRAY";
 
     ProgressDialog dialog;
+    InterstitialAd mInterstitialAd;
+    String[] jokesStrArr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Refer: https://developers.google.com/admob/android/interstitial#adding_interstitial_ads_to_an_activity
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(getResources().getString(R.string.banner_ad_unit_id));
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                requestNewInterstitial();
+                showJokes();
+            }
+        });
+
+        requestNewInterstitial();
+    }
+
+    // Test this on an emulator to see the Interstitial ad.
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
+
+        mInterstitialAd.loadAd(adRequest);
     }
 
     @Override
@@ -75,15 +99,28 @@ public class MainActivity extends ActionBarActivity implements EndpointsGetJokes
 
         stopProgress();
 
-        // Pass the Jokes from GCE to the Android Library to display those Jokes.
-        Intent jokeIntent = new Intent(this, DisplayJokes.class);
+        this.jokesStrArr = jokesStrArr;
 
-        Bundle jokesBundle = new Bundle();
-        jokesBundle.putStringArray(MainActivity.JOKES_ARRAY, jokesStrArr);
+        showJokes();
+    }
 
-        jokeIntent.putExtras(jokesBundle);
+    private void showJokes() {
 
-        this.startActivity(jokeIntent);
+        // Show Interstitial Ad if loaded.
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+
+            // Pass the Jokes from GCE to the Android Library to display those Jokes.
+            Intent jokeIntent = new Intent(this, DisplayJokes.class);
+
+            Bundle jokesBundle = new Bundle();
+            jokesBundle.putStringArray(MainActivity.JOKES_ARRAY, jokesStrArr);
+
+            jokeIntent.putExtras(jokesBundle);
+
+            this.startActivity(jokeIntent);
+        }
     }
 
     public void showProgress(String str) {

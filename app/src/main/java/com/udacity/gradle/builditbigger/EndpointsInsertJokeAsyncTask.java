@@ -77,8 +77,6 @@ public class EndpointsInsertJokeAsyncTask extends AsyncTask<Void, Void, Integer>
 
                 ++jokesCnt;
 
-            } catch (IOException ioe) {
-                ioe.printStackTrace();
             } catch (Exception e) {
                 e.printStackTrace();
             }
