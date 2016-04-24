@@ -1,45 +1,105 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivityFragment">
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".MainActivityFragment">
 
-    <TextView android:text="@string/instructions"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:id="@+id/sv_jokes_section"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/instructions_text_view"
-        />
+        android:layout_weight="1">
 
-    <Button
-        android:id="@+id/buttonTellJoke"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/instructions_text_view"
-        android:text="@string/button_text"
-        android:onClick="tellJoke"
-        />
 
-    <Button
-        android:id="@+id/buttonGetJoke"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonTellJoke"
-        android:text="GET JOKE"
-        android:onClick="getJoke"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/instructions_text_view_add_jokes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_add_jokes"
+                />
+
+            <Button
+                android:id="@+id/buttonTellJoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructions_text_view_add_jokes"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:onClick="tellJokes"
+                android:text="@string/button_add_jokes"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/instructions_text_view_get_jokes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonTellJoke"
+                android:text="@string/instructions_get_jokes"
+                />
+
+            <Button
+                android:id="@+id/buttonGetJoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructions_text_view_get_jokes"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:onClick="getJokes"
+                android:text="@string/button_get_jokes"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/instructions_text_view_delete_jokes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonGetJoke"
+                android:text="@string/instructions_delete_jokes"
+                />
+
+            <Button
+                android:id="@+id/buttonDeleteJoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructions_text_view_delete_jokes"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:onClick="deleteJokes"
+                android:text="@string/button_delete_jokes"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </ScrollView>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id">
     </com.google.android.gms.ads.AdView>
 
-</RelativeLayout>
+</LinearLayout>

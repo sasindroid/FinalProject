@@ -1,18 +1,17 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.JokeClass;
-import com.sasi.jokeandroidlib.DisplayJoke;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    public static final String JOKES_ARRAY = "JOKES_ARRAY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,23 +41,23 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view){
+    public void tellJokes(View view){
 
-//        String joke = new JokeClass().getJoke();
-//
-////        Toast.makeText(this, joke, Toast.LENGTH_LONG).show();
-//
-//        Intent jokeIntent = new Intent(this, DisplayJoke.class);
-//        jokeIntent.putExtra(Intent.EXTRA_TEXT, joke);
-//
-//        startActivity(jokeIntent);
+        // Get the jokes from Java Library.
+        String[] jokes = new JokeClass().getJokes();
 
-        new EndpointsQuote2InsertAsyncTask().execute();
+        // Pass the Jokes from Java Library to GCE.
+        new EndpointsInsertJokeAsyncTask(this, jokes).execute();
     }
 
-    public void getJoke(View view) {
+    public void getJokes(View view) {
 
-        new EndpointsQuote2AsyncTask().execute();
+        new EndpointsGetJokesAsyncTask(this).execute();
+    }
+
+    public void deleteJokes(View view) {
+
+        new EndpointsDeleteJokesAsyncTask(this).execute();
     }
 
 

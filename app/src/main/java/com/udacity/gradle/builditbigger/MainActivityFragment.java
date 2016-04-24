@@ -1,25 +1,14 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
-import android.os.AsyncTask;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.os.Bundle;
-import android.support.v4.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.example.sasikumarlakshmanan.myapplication.backend.myApi.MyApi;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
-import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
-import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-
-import java.io.IOException;
 
 
 /**
@@ -51,7 +40,5 @@ public class MainActivityFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
 //        new EndpointsAsyncTask().execute(new Pair<Context, String>(getActivity(), "Manfred"));
-
-//        new EndpointsQuote2AsyncTask().execute();
     }
 }
